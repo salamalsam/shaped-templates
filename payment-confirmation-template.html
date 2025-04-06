@@ -1,0 +1,87 @@
+<!--Subject:Payment Confirmation #{{orderNumber}}! - SHAPED-->
+<!--To Email: {{customerEmail}}-->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Confirmation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            max-width: 600px;
+            margin: 40px auto;
+            padding: 20px;
+            border-radius: 8px;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            background-color: rgb(186, 173, 166);
+            color: #ffffff;
+            padding: 20px;
+            font-size: 22px;
+            font-weight: bold;
+            border-radius: 8px 8px 0 0;
+            text-align: center;
+        }
+        .content {
+            padding: 20px;
+            color: #333;
+            font-size: 16px;
+            line-height: 1.6;
+        }
+        .order-details {
+            background-color: #FAF3E0;
+            padding: 15px;
+            border-radius: 6px;
+            text-align: left;
+            margin-top: 20px;
+        }
+        .order-details p {
+            margin: 8px 0;
+            font-size: 16px;
+            color: #5A3826;
+            font-weight: bold;
+        }
+        .highlight {
+            color: #8B4513;
+            font-weight: bold;
+        }
+        .footer {
+            text-align: center;
+            font-size: 14px;
+            color: #666;
+            margin-top: 20px;
+            padding-top: 10px;
+            border-top: 1px solid #ddd;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            Payment Confirmation
+        </div>
+        <div class="content">
+            <p>Thank you for your purchase! Your order has been successfully placed and payment received.</p>
+            <p>We appreciate your trust in us and will process your order shortly.</p>
+            <div class="order-details">
+                <p>Order Number: <span class="highlight">#{{orderNumber}}</span></p>
+                <p>Customer Name: <span class="highlight">{{customerName}}</span></p>
+                <p>Email: <span class="highlight">{{customerEmail}}</span></p>
+                <p>Amount: <span class="highlight">SAR {{amount}}</span></p>
+            </div>
+        </div>
+        <div class="footer">
+            &copy; 2025 SHAPED. All rights reserved.
+        </div>
+    </div>
+</body>
+</html>
